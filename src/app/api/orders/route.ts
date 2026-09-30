@@ -1,0 +1,1 @@
+export async function POST() { return Response.json({ error:'COMMERCE_NOT_CONFIGURED', message:'Payment and entitlement adapters have not been implemented.' }, { status:503, headers:{ 'Cache-Control':'no-store' } }); }

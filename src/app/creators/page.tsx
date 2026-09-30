@@ -1,0 +1,3 @@
+import Link from 'next/link';
+export const metadata = { title: '创作者' };
+export default function CreatorsPage() { return <section className="section prose-page"><span className="eyebrow">CREATE → TEST → PUBLISH</span><h1 className="page-title">在本地创作，在这里发行。</h1><p>平台不运行你的编程 Agent，也不要求玩家配置 AI。制作工具与游戏网站彼此独立。</p>{[['01','选择模板','首个正式候选为 WebGAL。固定引擎版本和基础界面，不为每部作品重写存档系统。'],['02','使用 Skill 制作','先生成占位素材草稿，再逐幕调整。保留项目文件、来源记录与真实测试报告。'],['03','检查并打包','分别生成试玩和完整版；验证清单、资源路径和校验和。AI 自述通过不等于服务器验收。'],['04','提交审核','第一版先人工接收发行包。当前仓库没有自动上传、公开发布或提现服务。']].map(([n,t,d]) => <article className="step" key={n}><b>{n}</b><div><h2>{t}</h2><p>{d}</p></div></article>)}<Link className="button" href="https://github.com/wwvvv/hgame/tree/main/skills/h5-game-maker">查看 Skill 与交付说明 ↗</Link></section>; }

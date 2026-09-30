@@ -1,0 +1,30 @@
+{
+  "name": "hgame",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.16.0 <25" },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "test:e2e": "playwright test",
+    "validate:manifest": "node --experimental-strip-types scripts/validate-manifest.ts"
+  },
+  "dependencies": {
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwindcss": "4.1.12",
+    "@tailwindcss/postcss": "4.1.12"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2",
+    "@types/node": "22.17.2",
+    "@types/react": "19.1.10",
+    "@types/react-dom": "19.1.9",
+    "@playwright/test": "1.55.1"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "gameId": "sample-game",
+  "releaseId": "sample-game-demo-v1",
+  "engine": "webgal",
+  "engineVersion": "0.0.0-example",
+  "edition": "demo",
+  "entry": "index.html",
+  "saveVersion": 1,
+  "assets": [{ "path": "index.html", "bytes": 0, "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" }]
+}
